@@ -388,3 +388,58 @@ h1 {
     transition: .25s;
 
 }
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.brand{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    width:64px;
+
+    height:64px;
+
+}
+
+.subtitle{
+
+    margin:8px 0 0;
+
+    color:var(--text-secondary);
+
+}
+
+@media(max-width:700px){
+
+.header{
+
+    flex-direction:column;
+
+}
+
+.brand{
+
+    align-items:flex-start;
+
+}
+}
