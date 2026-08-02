@@ -358,3 +358,33 @@ h1 {
 }
 
 }
+
+.toc a {
+
+    display: block;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+
+    transition: .2s;
+
+}
+
+.toc a.active {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.back-top {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .25s;
+
+}
