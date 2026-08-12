@@ -1,0 +1,89 @@
+site_name: Freelancer Digest Legal
+site_description: Official legal documentation for Freelancer Digest
+site_url: https://freelancer-digest-legal.github.io/
+
+repo_url: https://github.com/freelancer-digest-legal/freelancer-digest-legal.github.io
+edit_uri: ""
+
+theme:
+    name: material
+    language: en
+
+    logo: assets/logo.png
+
+    favicon: assets/logo.ico
+
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: blue
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Dark mode
+
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: blue
+          accent: blue
+          toggle:
+              icon: material/weather-sunny
+              name: Light mode
+
+    features:
+        - navigation.tabs
+        - navigation.top
+        - navigation.footer
+        - navigation.sections
+        - navigation.expand
+        - navigation.indexes
+
+        - toc.follow
+
+        - search.highlight
+        - search.suggest
+        - search.share
+
+        - content.code.copy
+
+plugins:
+    - search
+
+markdown_extensions:
+    - admonition
+
+    - tables
+
+    - toc:
+          permalink: true
+
+    - pymdownx.details
+
+    - pymdownx.superfences
+
+    - pymdownx.highlight
+
+    - pymdownx.inlinehilite
+
+    - pymdownx.keys
+
+nav:
+    - Home: index.md
+
+    - Legal:
+          - Terms of Service: terms.md
+
+          - Privacy Policy: privacy.md
+
+          - Billing & Refund Policy: billing.md
+
+          - Acceptable Use Policy: acceptable-use.md
+
+          - Disclaimer: disclaimer.md
+
+          - Contact: contact.md
+
+extra:
+    generator: false
+
+copyright: Copyright © 2026 Freelancer Digest
